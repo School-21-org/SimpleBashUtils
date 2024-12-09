@@ -2,8 +2,16 @@
 
 Development of Bash text utilities: cat, grep.
 
-## Usage of cat
+### Table of content
+1. [Cat usage](#cat)
+2. [Grep usage](#grep)
+3. [Specification](#specification)
+3. [Build](#build)
+4. [Integration tests](#integration-tests)
 
+## Cat
+
+usage:  
 `cat [OPTION] [FILE]...`
 
 ### cat options
@@ -17,8 +25,9 @@ Development of Bash text utilities: cat, grep.
 | 5 | -t implies -v (GNU: -T the same, but without implying -v) | but also display tabs as ^I  |
 | 6 | "-" (instead of file) | reads standard input from terminal  |
 
-## Usage of grep 
+## Grep 
 
+usage:  
 `grep [options] template [file_name]`
 
 ### grep options
@@ -49,13 +58,13 @@ Development of Bash text utilities: cat, grep.
 
 ## Build
 
-### Cat
+### Cat build
 
 1. go to `src/cat` folder  
 2. run make (use just `make` or `make cat`)  
 3. now you can run `./cat` with any file and flags specified above
 
-### Grep
+### Grep build
 
 1. go to `src/grep` folder  
 2. run make (use just `make` or `make grep`)  
@@ -69,4 +78,4 @@ Tests are written as bash scripts and located in correpsonding tests/ folders.
 To run tests:
 1. go to `src/cat(grep)` folder  
 2. run `make test`  
-3. you will receive tests result to terminal
+3. you will receive tests result as an output
